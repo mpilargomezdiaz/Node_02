@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        body { 
+            padding-left: 2%;
+            padding-bottom: 2%;
+        }
+    </style>
+</head>
+<body>
+    <form action="/basedatos" method="post">
+        <h2>Insertar producto</h2>
+        <label for="id">Id:</label>
+        <br>
+        <input type="text" placeholder="id" name="id" id="id">
+        <br>
+        <label for="price">Price:</label>
+        <br>
+        <input type="text" placeholder="price" name="price" id="price">
+        <br>
+        <label for="name">Name:</label>
+        <br>
+        <input type="text" placeholder="name" name="name" id="name">
+        <br />
+        <label for="description">Description:</label>
+        <br>
+        <input type="text" placeholder="description" name="description" id="description">
+        <br><br>
+        <button type="submit">Crear base de datos</button> 
+    </form>
+    <br>
+    <br>
+    <form action="/update" method="post">
+        <h2>Actualizar producto</h2>
+        <label for="id">Id:</label>
+        <br>
+        <input type="text" placeholder="id" name="id" id="id">
+        <br>
+        <label for="price">Price:</label>
+        <br>
+        <input type="text" placeholder="price" name="price" id="price">
+        <br>
+        <label for="name">Name:</label>
+        <br>
+        <input type="text" placeholder="name" name="name" id="name">
+        <br />
+        <label for="description">Description:</label>
+        <br>
+        <input type="text" placeholder="description" name="description" id="description">
+        <br><br>
+        <button type="submit">Actualizar documento</button> 
+    </form>
+    <br/>
+    <br>
+    <form action="/delete" method="post">
+        <h2>Eliminar producto</h2>
+        <label for="name">Name:</label>
+        <br>
+        <input type="text" placeholder="name" name="name" id="name">
+        <br />
+        <br>
+        <button type="submit">Eliminar documento</button> 
+    </form>
+<br>
+    <form action="/buscarporprecio" method="get">
+        <h2>Buscar producto por precio</h2>
+        <label for="price">Price:</label>
+        <br>
+        <input type="text" placeholder="price" name="price" id="price">
+        <br>
+        <br>
+        <button type="submit">Buscar producto</button> 
+    </form>
+    <br>
+    <form action="/buscarpornombre" method="get">
+        <h2>Buscar producto por nombre</h2>
+        <label for="name">Name:</label>
+        <br>
+        <input type="text" placeholder="name" name="name" id="name">
+        <br>
+        <br>
+        <button type="submit">Buscar producto</button> 
+    </form>
+</body>
+</html>
